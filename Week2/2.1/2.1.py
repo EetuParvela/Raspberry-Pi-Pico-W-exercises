@@ -63,7 +63,7 @@ while True:
         
         for i in range(0, len(samples)):
             ms = seconds[i] * 1000
-            oled.text(f"{i+1})int:{samples[i]}-{ms:.0f}ms", 0, i * 10)
+            oled.text(f"{i+1})int:{samples[i]}-{ms:.0f}ms", 0, i * 8, 1)
 
         oled.text(f"Freq: {avg_frequency:.4f}Hz", 0, 54)
         oled.show()
